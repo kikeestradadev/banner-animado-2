@@ -1,0 +1,105 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.banner {
+	display: flex;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 50vh;
+}
+
+.item {
+	display: flex;
+	flex: 1 1 30px;
+	transition: all  .3s;
+}
+.card-container{
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+}
+
+.item:first-child {
+	background: hsl(80,80%,50%);
+}
+
+.item:nth-child(2) {
+	background: hsl(180,80%,50%);
+}
+
+.item:nth-child(3) {
+	background: hsl(270,80%,70%);
+}
+
+.item:nth-child(4) {
+	background: hsl(320,80%,80%);
+}
+.item:nth-child(5) {
+	background: hsl(0, 80%, 80%);
+}
+
+.card-container-info{
+	width: 100%;
+	display: flex;
+	position: absolute;
+}
+.card-container-info span {
+	font-size: 16px;
+	margin: auto;
+	width: 90%;
+	text-align: center;
+	transform: rotate(-90deg);
+	transition: transform .3s;
+}
+.card-container-image{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	opacity: 0;
+	transition: opacity .3s;
+}
+.card-container-image img{
+	max-width: 150px;
+	width: 0px;
+	filter: drop-shadow(1rem 5rem 20px rgba(0,0,0,0.5));
+	transition: width .3s;
+}
+.item:hover, .item:focus {
+	flex: 10 0 auto;
+}
+
+.card-container:hover .card-container-info, .card-container:focus .card-container-info{
+	margin-top: -160px;
+	transition: margin-top .3s;
+}
+
+.card-container:hover .card-container-image, .card-container:focus .card-container-image{
+	opacity: 1;
+}
+.card-container:hover .card-container-image img, .card-container:focus .card-container-image img{
+	width: 100%;
+}
+.card-container:hover .card-container-info span, .card-container:focus .card-container-info span{
+	transform: none;
+	text-shadow: 9px 8px 4px rgba(0, 0, 0, 0.54);
+}
+@media screen and (min-width:700px) {
+	.card-container-image img{
+		max-width: 300px;
+	}
+	.card-container-info span{
+		font-size: 24px;
+	}
+	.card-container:hover .card-container-info, .card-container:focus .card-container-info{
+		margin-top: -311px;
+		transition: margin-top .3s;
+	}
+
+}

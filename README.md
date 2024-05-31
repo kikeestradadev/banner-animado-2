@@ -2,4 +2,4 @@
 
 this is an Email (pug) Boilerplate developed by me to develop Email templates with different practices and standarts
 
-## gh-pages link: https://kikeestradadev.github.io/banner-animado-1/
+## gh-pages link: https://kikeestradadev.github.io/banner-animado-2/

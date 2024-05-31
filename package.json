@@ -1,9 +1,9 @@
 {
-	"name": "banner-animado-1",
+	"name": "banner-animado-2",
 	"version": "1.0.0",
-	"description": "gh=pages link: https://kikeestradadev.github.io/banner-animado-1",
+	"description": "gh=pages link: https://kikeestradadev.github.io/banner-animado-2",
 	"main": "index.js",
-	"homepage": "https://kikeestradadev.github.io/banner-animado-1/",
+	"homepage": "https://kikeestradadev.github.io/banner-animado-2/",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"deploy": "gh-pages -d public"
@@ -13,12 +13,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kikeestradadev/banner-animado-1.git"
+		"url": "git+https://github.com/kikeestradadev/banner-animado-2.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/kikeestradadev/banner-animado-1/issues"
+		"url": "https://github.com/kikeestradadev/banner-animado-2/issues"
 	}
 }
